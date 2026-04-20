@@ -45,7 +45,7 @@ let adminUsers = [
   {
     id: 1,
     name: "Admin",
-    email: "info@travelofareinfo.com",
+    email: "info@travelofaredeals.com",
     password: "$2a$10$BaiQ2Njj1a3jsNLN9YYruu0wPKMzEQdvh0vM1iLMMhnPHhqt1TAky", // Hash: 'admin123'
   },
 ];
