@@ -1,0 +1,31 @@
+{
+  "siteName": "TraveloFare",
+  "tagline": "Best Travelling Experience",
+  "logoUrl": "/logo.png",
+  "faviconUrl": "/favicon.png",
+  "tfn": "+1-866-699-8687",
+  "email": "info@travelofareinfo.com",
+  "workingHours": "Mon-Sun 24/7",
+  "billingAddress": {
+    "company": "TraveloFare, Inc.",
+    "street": "C 177(A) IND AREA, SECTOR 74",
+    "city": "Mohali",
+    "state": "Punjab",
+    "zip": "160074",
+    "country": "India"
+  },
+  "copyrightText": "© 2006-{year} TraveloFare, Inc. All rights reserved.",
+  "socialLinks": {
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "colors": {
+    "headerBg": "#ffffff",
+    "headerText": "#1a202c",
+    "footerBg": "#333232",
+    "footerText": "#ffffff"
+  },
+  "siteUrl": "https://travelofareinfo.com"
+}

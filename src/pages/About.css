@@ -1,0 +1,240 @@
+/* Google Font (optional but recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8f9fb;
+  color: #1f2937;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO SECTION */
+.about-hero {
+  background: linear-gradient(rgba(0, 61, 122, 0.85), rgba(0, 26, 77, 0.9)),
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* SECTION COMMON */
+.about-section,
+.stats-section,
+.mission-section,
+.values-section {
+  margin: 80px 0;
+}
+.stats-section{
+  padding: 20px;
+}
+
+/* ABOUT TEXT */
+.about-content {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 61, 122, 0.1);
+  transition: 0.3s;
+}
+
+.about-content:hover {
+  transform: translateY(-5px);
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #003d7a;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+  color: #555555;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: #003d7a;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 16px;
+  transition: 0.3s;
+  box-shadow: 0 6px 20px rgba(0, 61, 122, 0.3);
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.stat-card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.stat-card:hover {
+  background: #0a2a5c;
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* MISSION */
+.mission-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #003d7a;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.mission-card {
+  background: #e8eef7;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #b8c9e8;
+}
+
+.mission-card h3 {
+  margin-bottom: 10px;
+  color: #003d7a;
+}
+
+.mission-card p {
+  font-size: 14px;
+  color: #555555;
+}
+
+.mission-card:hover {
+  background: #d4dce8;
+  transform: translateY(-6px);
+}
+/* STATS SECTION (IMPROVED) */
+.stats-section {
+  background: linear-gradient(135deg, #003d7a, #0a2a5c);
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 80px 0;
+}
+
+/* GRID */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.stat-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ICON */
+.stat-card svg {
+  margin-bottom: 10px;
+  color: #ffcc80; /* golden accent */
+}
+
+/* NUMBER */
+.stat-card h3 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* TEXT */
+.stat-card p {
+  font-size: 14px;
+  color: #e0e7ff; /* softer readable text */
+  opacity: 0.95;
+}
+
+/* HOVER EFFECT */
+.stat-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+}
+/* VALUES */
+.values-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #003d7a;
+}
+
+.values-list {
+  list-style: none;
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 61, 122, 0.08);
+}
+
+.values-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  color: #555555;
+}
+
+.values-list li:last-child {
+  border-bottom: none;
+}
+
+.values-list strong {
+  color: #003d7a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+}

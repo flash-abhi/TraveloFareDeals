@@ -1,0 +1,66 @@
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  /* user-select: none; */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.logo-container:hover {
+  transform: translateY(-1px);
+}
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 8px;
+}
+.logo-img {
+  display: block;
+  object-fit: contain;
+  width: auto;
+}
+
+/* ===== Header Logo ===== */
+.header .logo-img {
+  height: 40px;
+}
+
+/* ===== Footer Logo ===== */
+.footer .logo-img {
+  height: 46px;
+}
+
+/* ===== Generic fallback sizes ===== */
+.logo-small .logo-img  { height: 36px; }
+.logo-medium .logo-img { height: 50px; }
+.logo-large .logo-img  { height: 72px; }
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .header .logo-img {
+    height: 36px;
+  }
+  .footer .logo-img {
+    height: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .logo-img {
+    height: 32px;
+  }
+  .footer .logo-img {
+    height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo-img {
+    height: 28px;
+  }
+  .footer .logo-img {
+    height: 34px;
+  }
+}

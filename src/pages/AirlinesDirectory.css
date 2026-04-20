@@ -1,0 +1,398 @@
+/* Airlines Directory Styles */
+
+.airlines-directory {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding-bottom: 60px;
+}
+
+/* Hero Section */
+.directory-hero {
+  background: linear-gradient(135deg, #003d7a 0%, #001a4d 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.directory-hero h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.directory-hero p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Search and Filter Controls */
+.directory-controls {
+  max-width: 1200px;
+  margin: -30px auto 30px;
+  padding: 0 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.search-box, .filter-box {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.search-box svg, .filter-box svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.search-box input::placeholder {
+  color: #94a3b8;
+}
+
+.filter-box select {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #1e293b;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Results Count */
+.results-count {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Airlines Grid */
+.airlines-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.airline-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.airline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-color: #667eea;
+}
+
+.airline-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.airline-logo-small {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+  overflow: hidden;
+  position: relative;
+}
+
+.airline-logo-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.airline-logo-small:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+
+.airline-logo-small svg {
+  color: #667eea;
+}
+
+.airline-title h3 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+  font-weight: 700;
+}
+
+.airline-code-small {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #e0e7ff;
+  color: #4f46e5;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.airline-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.info-row svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.airline-card-footer {
+  padding-top: 16px;
+  border-top: 2px solid #f1f5f9;
+}
+
+.view-details {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.airline-card:hover .view-details {
+  color: #764ba2;
+}
+
+/* No Results */
+.no-results {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.no-results svg {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.no-results h3 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.no-results p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* Alliance Information */
+.alliance-info {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  padding: 0 20px;
+}
+
+.alliance-info h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.alliance-info > p {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alliance-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.alliance-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.alliance-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.alliance-card h3 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.alliance-card p {
+  color: #64748b;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.alliance-count {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Directory CTA */
+.directory-cta {
+  max-width: 800px;
+  margin: 60px auto 0;
+  padding: 50px 40px;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+}
+
+.directory-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.directory-cta p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .directory-hero h1 {
+    font-size: 2rem;
+    flex-direction: column;
+  }
+
+  .directory-hero p {
+    font-size: 1.1rem;
+  }
+
+  .directory-controls {
+    margin: -20px auto 20px;
+    flex-direction: column;
+  }
+
+  .search-box, .filter-box {
+    min-width: 100%;
+  }
+
+  .airlines-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .alliance-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .directory-cta {
+    padding: 40px 20px;
+  }
+
+  .directory-cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .directory-cta p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .airline-card-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .airline-title h3 {
+    font-size: 1.1rem;
+  }
+}
