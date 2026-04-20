@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Eye, EyeOff } from 'lucide-react';
 import './AdminLogin.css';
-
+import { API_URL } from "../config/api";
 const AdminLogin = () => {
 	const navigate = useNavigate();
 
@@ -30,7 +30,7 @@ const AdminLogin = () => {
 		setError('');
 
 		try {
-			const response = await fetch("http://localhost:3002/api/admin/login", {
+			const response = await fetch(`${API_URL}/api/admin/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
