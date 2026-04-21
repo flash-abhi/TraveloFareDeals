@@ -9,8 +9,8 @@ services:
       - /var/www/flight/backend:/app
     command: sh -c "npm ci --no-audit --no-fund && npm run start"
     environment:
-      - VIRTUAL_HOST=api.flyairlinebooking.com
-      - LETSENCRYPT_HOST=api.flyairlinebooking.com
+      - VIRTUAL_HOST=api.travelofaredeals.com
+      - LETSENCRYPT_HOST=api.travelofaredeals.com
       - VIRTUAL_PORT=5001
       - MONGODB_URI=mongodb://mongo:27017/flight-booking
       - NODE_ENV=production

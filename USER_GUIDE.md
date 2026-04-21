@@ -17,7 +17,7 @@ After generating blogs, you'll see them in the Blog Management tab with action b
 │ Travel • Destinations • Featured                            │
 │ 📅 January 15, 2024                                         │
 │                                                              │
-│ 🔗 https://flyairlinebooking.com/blog/top-10-destinations...   │
+│ 🔗 https://travelofaredeals.com/blog/top-10-destinations...   │
 │ [📋 Copy URL]                                               │
 │                                                              │
 │ Actions: [👁️ View] [🚀 Publish] [✏️ Edit] [🗑️ Delete]       │
@@ -60,7 +60,7 @@ If you haven't configured API keys yet, you'll see detailed instructions:
 │    Instructions: Click 'Write', paste title, paste content, │
 │    click 'Publish', add tags: travel, deals, flights         │
 │    ⚠️ IMPORTANT: Add canonical URL in story settings:       │
-│       https://flyairlinebooking.com/blog/your-blog-slug         │
+│       https://travelofaredeals.com/blog/your-blog-slug         │
 │                                                               │
 │ 2. Dev.to (DA 90)                                            │
 │    📍 https://dev.to/new                                     │
@@ -139,7 +139,7 @@ Once you've added API keys to the `.env` file, publishing is automatic:
 
 3. **Copy the Blog URL**
    - Click the "📋 Copy URL" button under your blog
-   - This copies: `https://flyairlinebooking.com/blog/your-blog-slug`
+   - This copies: `https://travelofaredeals.com/blog/your-blog-slug`
 
 4. **Open Medium**
    - In the publishing guide, click the Medium link
@@ -163,7 +163,7 @@ Once you've added API keys to the `.env` file, publishing is automatic:
    - Click the three dots (...) at top-right
    - Select "More settings"
    - Scroll to "Advanced settings"
-   - In "Canonical link", paste: `https://flyairlinebooking.com/blog/your-slug`
+   - In "Canonical link", paste: `https://travelofaredeals.com/blog/your-slug`
    - This tells Google that your site is the original source
 
 8. **Publish**

@@ -5,7 +5,7 @@ const path = require('path');
 require('dotenv').config();
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-const SITE_URL = 'https://flyairlinebooking.com';
+const SITE_URL = 'https://travelofaredeals.com';
 const API_BASE = 'http://localhost:5001';
 
 class SEOAutomationAgent {
@@ -142,7 +142,7 @@ class SEOAutomationAgent {
     console.log('🔗 Checking backlinks...');
     try {
       const response = await axios.get(`${API_BASE}/api/seo/backlinks`, {
-        params: { domain: 'flyairlinebooking.com' }
+        params: { domain: 'travelofaredeals.com' }
       });
       
       await this.log('Backlink Check', 'Success', {
@@ -178,7 +178,7 @@ class SEOAutomationAgent {
   async generateContentSuggestions() {
     console.log('💡 Generating content suggestions...');
     try {
-      const prompt = `As an SEO expert for a travel deals website (flyairlinebooking.com), suggest 5 blog post topics for this week that will:
+      const prompt = `As an SEO expert for a travel deals website (travelofaredeals.com), suggest 5 blog post topics for this week that will:
 1. Drive organic traffic
 2. Target high-value keywords
 3. Be engaging and shareable

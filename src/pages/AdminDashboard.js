@@ -196,7 +196,7 @@ function AdminDashboard() {
     logoUrl: "/logo.svg",
     faviconUrl: "/favicon.ico",
     tfn: "+1-888-859-0441",
-    email: "support@flyairlinebooking.com",
+    email: "support@travelofaredeals.com",
     workingHours: "Mon-Sun 24/7",
     billingAddress: {
       company: "TraveloFare, Inc.",
@@ -214,7 +214,7 @@ function AdminDashboard() {
       footerBg: "linear-gradient(135deg, #2d3748 0%, #1a202c 100%)",
       footerText: "#e2e8f0",
     },
-    siteUrl: "https://flyairlinebooking.com",
+    siteUrl: "https://travelofaredeals.com",
   });
   const [settingsTab, setSettingsTab] = useState("general");
   const [logoUploading, setLogoUploading] = useState(false);
@@ -249,7 +249,7 @@ function AdminDashboard() {
       if (activeSeoTool === "backlinks" && seoToolData.backlinks.total === 0) {
         try {
           const response = await fetch(
-            `${API_URL}/api/seo/backlinks?domain=flyairlinebooking.com`,
+            `${API_URL}/api/seo/backlinks?domain=travelofaredeals.com`,
             {
               headers: { Authorization: `Bearer ${token}` },
             },
@@ -1309,7 +1309,7 @@ function AdminDashboard() {
 
       if (data.success) {
         const blogUrl =
-          data.url || `https://flyairlinebooking.com/blog/${data.post.slug}`;
+          data.url || `https://travelofaredeals.com/blog/${data.post.slug}`;
         alert(
           `✅ AI Blog Post Generated!\n\nTitle: ${data.post.title}\n\n📍 Live URL:\n${blogUrl}\n\nThe blog post has been automatically created and published.\n\nClick OK to copy the URL to clipboard.`,
         );
@@ -1375,7 +1375,7 @@ function AdminDashboard() {
       if (data.success) {
         const blogUrls = data.posts
           ? data.posts
-              .map((post) => `https://flyairlinebooking.com/blog/${post.slug}`)
+              .map((post) => `https://travelofaredeals.com/blog/${post.slug}`)
               .join("\n")
           : "";
 
@@ -2972,8 +2972,8 @@ function AdminDashboard() {
                           <input
                             type="url"
                             name="siteUrl"
-                            placeholder="https://flyairlinebooking.com"
-                            defaultValue="https://flyairlinebooking.com"
+                            placeholder="https://travelofaredeals.com"
+                            defaultValue="https://travelofaredeals.com"
                             required
                           />
                         </div>
@@ -3004,7 +3004,7 @@ function AdminDashboard() {
                           <li>
                             Add redirect URI:{" "}
                             <code>
-                              https://flyairlinebooking.com/api/gsc/oauth2callback
+                              https://travelofaredeals.com/api/gsc/oauth2callback
                             </code>
                           </li>
                           <li>Copy Client ID and Client Secret here</li>
@@ -3853,7 +3853,7 @@ function AdminDashboard() {
                     try {
                       const token = localStorage.getItem("adminToken");
                       const response = await fetch(
-                        `${API_URL}/api/seo/backlinks?domain=flyairlinebooking.com`,
+                        `${API_URL}/api/seo/backlinks?domain=travelofaredeals.com`,
                         {
                           headers: { Authorization: `Bearer ${token}` },
                         },
@@ -4618,7 +4618,7 @@ function AdminDashboard() {
                   onChange={(e) =>
                     setSeoData({ ...seoData, ogImage: e.target.value })
                   }
-                  placeholder="https://flyairlinebooking.com/og-image.jpg"
+                  placeholder="https://travelofaredeals.com/og-image.jpg"
                 />
               </div>
 
@@ -4630,7 +4630,7 @@ function AdminDashboard() {
                   onChange={(e) =>
                     setSeoData({ ...seoData, canonicalUrl: e.target.value })
                   }
-                  placeholder="https://flyairlinebooking.com"
+                  placeholder="https://travelofaredeals.com"
                 />
               </div>
 
@@ -5259,7 +5259,7 @@ function AdminDashboard() {
                   onChange={(e) =>
                     setContent({ ...content, contactEmail: e.target.value })
                   }
-                  placeholder="support@flyairlinebooking.com"
+                  placeholder="support@travelofaredeals.com"
                 />
               </div>
 
@@ -5546,16 +5546,16 @@ function AdminDashboard() {
                             {post.slug && (
                               <div className="blog-url">
                                 <a
-                                  href={`https://flyairlinebooking.com/blog/${post.slug}`}
+                                  href={`https://travelofaredeals.com/blog/${post.slug}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="url-link"
                                 >
-                                  📍 flyairlinebooking.com/blog/{post.slug}
+                                  📍 travelofaredeals.com/blog/{post.slug}
                                 </a>
                                 <button
                                   onClick={() => {
-                                    const url = `https://flyairlinebooking.com/blog/${post.slug}`;
+                                    const url = `https://travelofaredeals.com/blog/${post.slug}`;
                                     navigator.clipboard
                                       .writeText(url)
                                       .then(() =>
@@ -6801,7 +6801,7 @@ function AdminDashboard() {
                             siteUrl: e.target.value,
                           })
                         }
-                        placeholder="https://flyairlinebooking.com"
+                        placeholder="https://travelofaredeals.com"
                       />
                     </div>
                     <div className="form-group full-width">
@@ -6876,7 +6876,7 @@ function AdminDashboard() {
                             email: e.target.value,
                           })
                         }
-                        placeholder="support@flyairlinebooking.com"
+                        placeholder="support@travelofaredeals.com"
                         required
                       />
                       <small>
@@ -7196,7 +7196,7 @@ function AdminDashboard() {
                             },
                           })
                         }
-                        placeholder="https://facebook.com/flyairlinebooking"
+                        placeholder="https://facebook.com/travelofaredeals"
                       />
                     </div>
                     <div className="form-group">
@@ -7215,7 +7215,7 @@ function AdminDashboard() {
                             },
                           })
                         }
-                        placeholder="https://twitter.com/flyairlinebooking"
+                        placeholder="https://twitter.com/travelofaredeals"
                       />
                     </div>
                     <div className="form-group">
@@ -7234,7 +7234,7 @@ function AdminDashboard() {
                             },
                           })
                         }
-                        placeholder="https://instagram.com/flyairlinebooking"
+                        placeholder="https://instagram.com/travelofaredeals"
                       />
                     </div>
                     <div className="form-group">
@@ -7253,7 +7253,7 @@ function AdminDashboard() {
                             },
                           })
                         }
-                        placeholder="https://linkedin.com/company/flyairlinebooking"
+                        placeholder="https://linkedin.com/company/travelofaredeals"
                       />
                     </div>
                   </div>

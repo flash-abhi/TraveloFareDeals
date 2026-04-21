@@ -96,7 +96,7 @@ const AirlineCustomerServiceNumber = () => {
         />
         <link
           rel="canonical"
-          href="https://flyairlinebooking.com/airline-customer-service-number"
+          href="https://travelofaredeals.com/airline-customer-service-number"
         />
         <meta
           property="og:title"
@@ -112,8 +112,8 @@ const AirlineCustomerServiceNumber = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "TraveloFare - Airline Customer Service",
-            url: "https://flyairlinebooking.com/airline-customer-service-number",
-            logo: "https://flyairlinebooking.com/logo.svg",
+            url: "https://travelofaredeals.com/airline-customer-service-number",
+            logo: "https://travelofaredeals.com/logo.svg",
             contactPoint: [
               {
                 "@type": "ContactPoint",

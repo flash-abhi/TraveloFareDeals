@@ -9,8 +9,8 @@ const contactConfig = require('../config/contactSettings');
 class EmailNotificationService {
   constructor() {
     this.enabled = process.env.EMAIL_NOTIFICATIONS_ENABLED === 'true';
-    this.fromEmail = process.env.EMAIL_FROM || 'security@flyairlinebooking.com';
-    this.adminEmails = (process.env.ADMIN_EMAILS || 'info@flyairlinebooking.com').split(',');
+    this.fromEmail = process.env.EMAIL_FROM || 'security@travelofaredeals.com';
+    this.adminEmails = (process.env.ADMIN_EMAILS || 'info@travelofaredeals.com').split(',');
     this.transporter = null;
     
     if (this.enabled) {
@@ -241,20 +241,20 @@ class EmailNotificationService {
             
             <div style="margin-top: 30px; padding: 15px; background: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 4px;">
               <p style="margin: 0; color: #92400e; font-size: 14px;">
-                <strong>⚠️ Security Reminder:</strong> This is an automated security alert from flyairlinebooking.com. 
+                <strong>⚠️ Security Reminder:</strong> This is an automated security alert from travelofaredeals.com. 
                 Please review the details above and take appropriate action if necessary.
               </p>
             </div>
             
             <div style="margin-top: 30px; text-align: center;">
-              <a href="https://flyairlinebooking.com/admin/dashboard" style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">
+              <a href="https://travelofaredeals.com/admin/dashboard" style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">
                 View Security Dashboard
               </a>
             </div>
           </div>
           
           <div style="margin-top: 20px; text-align: center; color: #9ca3af; font-size: 12px;">
-                <p>flyairlinebooking.com Security Team</p>
+                <p>travelofaredeals.com Security Team</p>
             <p>${contactConfig.getContactSettings().address}</p>
             <p>Phone: ${contactConfig.getContactSettings().tfn}</p>
           </div>
@@ -285,10 +285,10 @@ DETAILS:
 ${detailsText}
 
 ---
-This is an automated security alert from flyairlinebooking.com.
+This is an automated security alert from travelofaredeals.com.
 Please review the details above and take appropriate action if necessary.
 
-flyairlinebooking.com Security Team
+travelofaredeals.com Security Team
 ${contactConfig.getContactSettings().address}
 Phone: ${contactConfig.getContactSettings().tfn}
     `.trim();

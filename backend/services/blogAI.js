@@ -113,7 +113,7 @@ class BlogAIService {
   generateTitle(topic, destination) {
     const templates = [
       `${destination} ${topic}: Ultimate Travel Guide 2025 | TraveloFare`,
-      `Best ${topic} in ${destination} - Book Now & Save | flyairlinebooking.com`,
+      `Best ${topic} in ${destination} - Book Now & Save | travelofaredeals.com`,
       `${destination} Travel Guide: ${topic} + Exclusive Flight Deals`,
       `Discover ${destination}: ${topic} | Cheap Flights Available`,
       `${topic} in ${destination} - Expert Tips & Flight Deals | Call +1-844-480-0252`,
@@ -125,21 +125,21 @@ class BlogAIService {
 
   generateExcerpt(topic, destination) {
     const templates = [
-      `Planning a trip to ${destination}? Discover the best ${topic.toLowerCase()} with flyairlinebooking.com. Get exclusive flight deals, expert travel tips, and personalized service. Call +1-844-480-0252 for unbeatable prices!`,
-      `Book your ${destination} adventure today! This guide covers ${topic.toLowerCase()}, plus find the cheapest flights on flyairlinebooking.com. Save up to 40% on vacation packages. Call +1-844-480-0252 now!`,
-      `Looking for ${topic.toLowerCase()} in ${destination}? flyairlinebooking.com offers expert guides, best flight prices, and 24/7 support. Visit our website or call +1-844-480-0252 to book your dream vacation.`,
-      `${destination} awaits! Explore ${topic.toLowerCase()} with our comprehensive guide. Find the best flight deals at flyairlinebooking.com or call +1-844-480-0252 for personalized travel planning and exclusive offers.`
+      `Planning a trip to ${destination}? Discover the best ${topic.toLowerCase()} with travelofaredeals.com. Get exclusive flight deals, expert travel tips, and personalized service. Call +1-844-480-0252 for unbeatable prices!`,
+      `Book your ${destination} adventure today! This guide covers ${topic.toLowerCase()}, plus find the cheapest flights on travelofaredeals.com. Save up to 40% on vacation packages. Call +1-844-480-0252 now!`,
+      `Looking for ${topic.toLowerCase()} in ${destination}? travelofaredeals.com offers expert guides, best flight prices, and 24/7 support. Visit our website or call +1-844-480-0252 to book your dream vacation.`,
+      `${destination} awaits! Explore ${topic.toLowerCase()} with our comprehensive guide. Find the best flight deals at travelofaredeals.com or call +1-844-480-0252 for personalized travel planning and exclusive offers.`
     ];
     return templates[Math.floor(Math.random() * templates.length)];
   }
 
   generateContent(topic, destination, airlines) {
     const airlineLinks = airlines.map(airline => 
-      `[${airline.name}](https://flyairlinebooking.com/airlines/${airline.slug})`
+      `[${airline.name}](https://travelofaredeals.com/airlines/${airline.slug})`
     ).join(', ');
     
     const airlineSection = airlines.map(airline => 
-      `- **[${airline.name}](https://flyairlinebooking.com/airlines/${airline.slug})** (${airline.code}) - View routes, prices, and exclusive deals`
+      `- **[${airline.name}](https://travelofaredeals.com/airlines/${airline.slug})** (${airline.code}) - View routes, prices, and exclusive deals`
     ).join('\n');
 
     // Generate relevant inline images
@@ -152,7 +152,7 @@ class BlogAIService {
 
 ${destination} is one of the world's most captivating destinations, offering travelers an unforgettable experience. Whether you're interested in ${topic.toLowerCase()}, this guide will help you navigate everything this amazing destination has to offer.
 
-At **flyairlinebooking.com**, we specialize in finding the best flight deals and travel packages to help you explore ${destination} without breaking the bank. Call us at **+1-844-480-0252** for personalized travel assistance and exclusive offers.
+At **travelofaredeals.com**, we specialize in finding the best flight deals and travel packages to help you explore ${destination} without breaking the bank. Call us at **+1-844-480-0252** for personalized travel assistance and exclusive offers.
 
 ## Why Visit ${destination}?
 
@@ -173,7 +173,7 @@ Find the best deals on flights to ${destination} with our partner airlines. We c
 
 ${airlineSection}
 
-Visit our **[Airlines Directory](https://flyairlinebooking.com/airlines)** to explore all available carriers, compare prices, and book your flights today!
+Visit our **[Airlines Directory](https://travelofaredeals.com/airlines)** to explore all available carriers, compare prices, and book your flights today!
 
 ## Best Time to Visit
 
@@ -183,7 +183,7 @@ The ideal time to visit ${destination} depends on what you're looking for:
 - **Shoulder Season**: Great balance of good weather and fewer tourists
 - **Off-Season**: Budget-friendly with unique local experiences
 
-💡 **Pro Tip**: Visit [flyairlinebooking.com](https://flyairlinebooking.com) to compare flight prices across different seasons and find the best time to book your ${destination} adventure.
+💡 **Pro Tip**: Visit [travelofaredeals.com](https://travelofaredeals.com) to compare flight prices across different seasons and find the best time to book your ${destination} adventure.
 
 ## Top Attractions
 
@@ -222,7 +222,7 @@ Choose from a wide range of lodging options:
 - Boutique accommodations
 - Budget-friendly hostels and guesthouses
 
-  🏨 **Book Smart**: Bundle your flight and hotel on **flyairlinebooking.com** to save up to 40% on your ${destination} vacation package.
+  🏨 **Book Smart**: Bundle your flight and hotel on **travelofaredeals.com** to save up to 40% on your ${destination} vacation package.
 
 ### Local Cuisine & Dining
 
@@ -244,7 +244,7 @@ Need help planning your budget? Our travel experts at **+1-844-480-0252** can cr
 
 Looking for cheap flights to ${destination}? We've got you covered! Check out these airlines offering competitive fares:
 
-${airlines.map(airline => `**[Book ${airline.name} to ${destination}](https://flyairlinebooking.com/airlines/${airline.slug})** - Compare prices, view schedules, and find exclusive deals on ${airline.name} flights.`).join('\n\n')}
+${airlines.map(airline => `**[Book ${airline.name} to ${destination}](https://travelofaredeals.com/airlines/${airline.slug})** - Compare prices, view schedules, and find exclusive deals on ${airline.name} flights.`).join('\n\n')}
 
 💰 **Exclusive Offer**: Call **+1-844-480-0252** and mention this blog to get an additional discount on your ${destination} booking!
 
@@ -281,15 +281,15 @@ ${destination} offers incredible opportunities for ${topic.toLowerCase()}. With 
 🔒 **Secure Booking** - Safe and protected transactions  
 🌍 **Multiple Airlines** - Compare ${airlineLinks} and 50+ more carriers  
 
-**Ready to book your flight to ${destination}?** Visit [flyairlinebooking.com](https://flyairlinebooking.com) or call **+1-844-480-0252** to speak with our travel experts and find the best deals on flights, hotels, and vacation packages!
+**Ready to book your flight to ${destination}?** Visit [travelofaredeals.com](https://travelofaredeals.com) or call **+1-844-480-0252** to speak with our travel experts and find the best deals on flights, hotels, and vacation packages!
 
-Browse our **[Airlines Directory](https://flyairlinebooking.com/airlines)** to see all available carriers and exclusive airline deals.
+Browse our **[Airlines Directory](https://travelofaredeals.com/airlines)** to see all available carriers and exclusive airline deals.
 
 Start planning your trip today and create memories that will last a lifetime!
 
 ---
 
-*For the best deals on flights to ${destination} and worldwide destinations, visit [flyairlinebooking.com](https://flyairlinebooking.com) or call us at +1-844-480-0252*
+*For the best deals on flights to ${destination} and worldwide destinations, visit [travelofaredeals.com](https://travelofaredeals.com) or call us at +1-844-480-0252*
 
 *Last updated: ${new Date().toLocaleDateString()}*
 `;

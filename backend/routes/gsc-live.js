@@ -24,7 +24,7 @@ let tokenStore = {
 
 let gscData = {
   connected: false,
-  siteUrl: process.env.GSC_SITE_URL || 'https://flyairlinebooking.com',
+  siteUrl: process.env.GSC_SITE_URL || 'https://travelofaredeals.com',
   lastSync: null,
   performance: null,
   indexing: null,

@@ -10,7 +10,7 @@ export const ContactProvider = ({ children }) => {
     logoUrl: "/logo.svg",
     faviconUrl: "/favicon.ico",
     tfn: "+1-888-859-0441",
-    email: "support@flyairlinebooking.com",
+    email: "support@travelofaredeals.com",
     workingHours: "Mon-Sun 24/7",
     billingAddress: {
       company: "TraveloFare, Inc.",

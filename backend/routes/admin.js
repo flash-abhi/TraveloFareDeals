@@ -64,11 +64,11 @@ const updateAdminPassword = (email, newPasswordHash) => {
 let seoSettings = {
   pageTitle: "Best Flight Deals, Hotels & Cruises | TraveloFare",
   metaDescription:
-    "Find the best flight deals, hotels, cruises, and vacation packages at unbeatable prices. Book your next adventure with flyairlinebooking.com - Your trusted travel partner.",
+    "Find the best flight deals, hotels, cruises, and vacation packages at unbeatable prices. Book your next adventure with travelofaredeals.com - Your trusted travel partner.",
   keywords:
     "flight deals, cheap flights, hotels, cruises, vacation packages, travel deals, airline tickets",
-  ogImage: "https://flyairlinebooking.com/og-image.jpg",
-  canonicalUrl: "https://flyairlinebooking.com",
+  ogImage: "https://travelofaredeals.com/og-image.jpg",
+  canonicalUrl: "https://travelofaredeals.com",
 };
 
 // Website content storage
@@ -76,7 +76,7 @@ let websiteContent = {
   heroTitle: '',
   heroSubtitle: '',
   aboutText: '',
-  contactEmail: 'support@flyairlinebooking.com',
+  contactEmail: 'support@travelofaredeals.com',
   contactPhone: '+1-844-480-0252',
   contactAddress: '1309 Coffeen Ave STE 1200, Sheridan, WY 82801, USA'
 };
@@ -131,7 +131,7 @@ let gdsSettings = {
 // Contact Settings storage
 let contactSettings = {
   tfn: '+1-888-859-0441',
-  email: 'support@flyairlinebooking.com',
+  email: 'support@travelofaredeals.com',
   address: '1309 Coffeen Ave STE 1200, Sheridan, WY 82801, USA',
   workingHours: 'Mon-Sun 24/7'
 };
@@ -140,7 +140,7 @@ let contactSettings = {
 let gscSettings = {
   clientId: process.env.GOOGLE_CLIENT_ID || '',
   clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
-  siteUrl: process.env.GSC_SITE_URL || 'https://flyairlinebooking.com',
+  siteUrl: process.env.GSC_SITE_URL || 'https://travelofaredeals.com',
   enabled: false,
   connected: false
 };
@@ -413,7 +413,7 @@ router.get('/seo/analytics', verifyAdminToken, async (req, res) => {
 // SEO Site Audit
 router.get('/seo/audit', verifyAdminToken, async (req, res) => {
   try {
-    const siteUrl = process.env.GSC_SITE_URL || 'https://flyairlinebooking.com';
+    const siteUrl = process.env.GSC_SITE_URL || 'https://travelofaredeals.com';
     
     const auditResults = {
       score: 85,
@@ -786,7 +786,7 @@ router.post('/blog/ai/generate', verifyAdminToken, async (req, res) => {
     const aiPost = await blogAI.generateBlogPost();
     
     // Generate live URL for the blog post
-    const blogUrl = `https://flyairlinebooking.com/blog/${aiPost.slug}`;
+    const blogUrl = `https://travelofaredeals.com/blog/${aiPost.slug}`;
     
     const newPost = {
       id: blogPosts.length + 1,
@@ -827,7 +827,7 @@ router.post('/blog/ai/generate-bulk', verifyAdminToken, async (req, res) => {
       const aiPost = await blogAI.generateBlogPost();
       
       // Generate live URL for the blog post
-      const blogUrl = `https://flyairlinebooking.com/blog/${aiPost.slug}`;
+      const blogUrl = `https://travelofaredeals.com/blog/${aiPost.slug}`;
       
       const newPost = {
         id: blogPosts.length + 1,

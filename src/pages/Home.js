@@ -268,11 +268,11 @@ function Home() {
   return (
     <>
       <SeoMeta
-        title="flyairlinebooking.com - Best Flight & Travel Deals"
-        description="Find the best flight deals, hotels, cruises and vacation packages at flyairlinebooking.com. Book cheap flights and save on your next trip."
+        title="travelofaredeals.com - Best Flight & Travel Deals"
+        description="Find the best flight deals, hotels, cruises and vacation packages at travelofaredeals.com. Book cheap flights and save on your next trip."
         keywords="flights, travel, deals, hotels, vacation, booking, cheap flights, airfare"
         image="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500"
-        url="https://flyairlinebooking.com/"
+        url="https://travelofaredeals.com/"
       />
       <div className="home">
         <section className="hero">

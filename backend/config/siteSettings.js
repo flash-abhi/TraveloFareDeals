@@ -19,7 +19,7 @@ const defaults = {
 
   // Contact
   tfn: "+1-888-859-0441",
-  email: "support@flyairlinebooking.com",
+  email: "support@travelofaredeals.com",
   workingHours: "Mon-Sun 24/7",
 
   // Billing / Business Address
@@ -52,7 +52,7 @@ const defaults = {
   },
 
   // SEO
-  siteUrl: "https://flyairlinebooking.com",
+  siteUrl: "https://travelofaredeals.com",
 };
 
 let siteSettings = { ...defaults };

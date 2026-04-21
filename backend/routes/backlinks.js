@@ -294,7 +294,7 @@ router.post('/submit/live', verifyAdminToken, async (req, res) => {
       title: postTitle,
       content: postContent,
       tags: tags || ['travel', 'flights', 'deals', 'vacation'],
-      link: link || process.env.SITE_URL || 'https://flyairlinebooking.com',
+      link: link || process.env.SITE_URL || 'https://travelofaredeals.com',
       imageUrl,
       subreddit,
       description: postContent.substring(0, 200),
@@ -377,13 +377,13 @@ router.post('/submit/linkedin', verifyAdminToken, async (req, res) => {
       const generated = await backlinkAI.generateContent('socialPost', { 
         topic: 'travel deals and savings tips' 
       });
-      content = generated.content || `✈️ Planning your next trip? Here's how to save big on flights!\n\nCheck out the latest deals at ${process.env.SITE_URL || 'https://flyairlinebooking.com'}\n\n#travel #flights #deals`;
+      content = generated.content || `✈️ Planning your next trip? Here's how to save big on flights!\n\nCheck out the latest deals at ${process.env.SITE_URL || 'https://travelofaredeals.com'}\n\n#travel #flights #deals`;
     }
 
     const result = await platformIntegrations.postToLinkedIn(
       content,
       title || 'Best Flight Deals',
-      link || process.env.SITE_URL || 'https://flyairlinebooking.com'
+      link || process.env.SITE_URL || 'https://travelofaredeals.com'
     );
 
     if (result.success) {

@@ -19,7 +19,7 @@ const AirlineSupport = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "TraveloFare Support",
-            url: "https://flyairlinebooking.com/",
+            url: "https://travelofaredeals.com/",
             contactPoint: [
               {
                 "@type": "ContactPoint",

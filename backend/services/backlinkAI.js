@@ -14,7 +14,7 @@ const axios = require('axios');
 class BacklinkAIService {
   constructor() {
     this.openaiKey = process.env.OPENAI_API_KEY;
-    this.siteUrl = process.env.SITE_URL || 'https://flyairlinebooking.com';
+    this.siteUrl = process.env.SITE_URL || 'https://travelofaredeals.com';
     this.siteName = process.env.SITE_NAME || "TraveloFare";
     this.siteDescription = process.env.SITE_DESCRIPTION || 'Best flight deals, hotels, cruises, and vacation packages';
     

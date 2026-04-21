@@ -31,7 +31,7 @@ const verifyAdminToken = (req, res, next) => {
  */
 router.get('/google/auth-url', verifyAdminToken, (req, res) => {
   const clientId = process.env.GOOGLE_CLIENT_ID;
-  const redirectUri = `${process.env.SITE_URL || 'https://flyairlinebooking.com'}/api/oauth/google/callback`;
+  const redirectUri = `${process.env.SITE_URL || 'https://travelofaredeals.com'}/api/oauth/google/callback`;
   
   const scopes = [
     'https://www.googleapis.com/auth/blogger',
@@ -69,7 +69,7 @@ router.get('/google/callback', async (req, res) => {
   }
   
   try {
-    const redirectUri = `${process.env.SITE_URL || 'https://flyairlinebooking.com'}/api/oauth/google/callback`;
+    const redirectUri = `${process.env.SITE_URL || 'https://travelofaredeals.com'}/api/oauth/google/callback`;
     
     // Exchange code for tokens
     const tokenResponse = await axios.post('https://oauth2.googleapis.com/token', {

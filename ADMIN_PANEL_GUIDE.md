@@ -4,7 +4,7 @@
 
 **Admin Login URL:** `http://localhost:3000/admin/login`
 
-**Email:** `info@flyairlinebooking.com`  
+**Email:** `info@travelofaredeals.com`  
 **Password:** `admin123`
 
 ---
@@ -127,7 +127,7 @@ Edit all main website content from one place:
   "heroTitle": "Find Your Perfect Flight Deal",
   "heroSubtitle": "Save up to 40% on flights worldwide",
   "aboutText": "Company description...",
-  "contactEmail": "support@flyairlinebooking.com",
+  "contactEmail": "support@travelofaredeals.com",
   "contactPhone": "+1-844-480-0252",
   "contactAddress": "1309 Coffeen Ave STE 1200, Sheridan, WY 82801, USA"
 }
@@ -191,7 +191,7 @@ const loginResponse = await fetch('http://localhost:5000/api/admin/login', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
-    email: 'info@flyairlinebooking.com',
+    email: 'info@travelofaredeals.com',
     password: 'admin123'
   })
 });
@@ -292,7 +292,7 @@ nohup node server.js > server.log 2>&1 &
 
 ### "Invalid credentials"
 **Solution:** Use correct credentials:
-- Email: `info@flyairlinebooking.com`
+- Email: `info@travelofaredeals.com`
 - Password: `admin123`
 
 ### Cannot access admin panel

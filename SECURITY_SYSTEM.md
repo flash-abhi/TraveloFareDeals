@@ -2,7 +2,7 @@
 
 ## Overview
 
-LockMyFare (flyairlinebooking.com) now includes a comprehensive security system to protect against phishing attempts, brute force attacks, and unauthorized access. The system provides real-time monitoring, automatic IP blocking, CAPTCHA challenges, and email alerts.
+LockMyFare (travelofaredeals.com) now includes a comprehensive security system to protect against phishing attempts, brute force attacks, and unauthorized access. The system provides real-time monitoring, automatic IP blocking, CAPTCHA challenges, and email alerts.
 
 ## Table of Contents
 
@@ -185,7 +185,7 @@ SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
-ADMIN_EMAILS=info@flyairlinebooking.com
+ADMIN_EMAILS=info@travelofaredeals.com
 ```
 
 ### 3. CAPTCHA Setup (Optional)
@@ -362,7 +362,7 @@ Login with security checks
 **Request:**
 ```json
 {
-   "email": "info@flyairlinebooking.com",
+   "email": "info@travelofaredeals.com",
   "password": "admin123",
   "captchaToken": "optional-captcha-token"
 }
@@ -376,7 +376,7 @@ Login with security checks
   "admin": {
     "id": 1,
     "name": "Admin",
-   "email": "info@flyairlinebooking.com"
+   "email": "info@travelofaredeals.com"
   },
   "security": {
     "suspiciousScore": 0,
@@ -584,14 +584,14 @@ Sent when: Multiple failed attempts for same account
 
 1. **Normal Login**
    ```
-   Email: info@flyairlinebooking.com
+   Email: info@travelofaredeals.com
    Password: admin123
    Expected: Success
    ```
 
 2. **Failed Login**
    ```
-   Email: info@flyairlinebooking.com
+   Email: info@travelofaredeals.com
    Password: wrongpassword
    Expected: Failure, counter increases
    ```
@@ -690,7 +690,7 @@ Sent when: Multiple failed attempts for same account
 ## Support
 
 For questions or issues:
-- **Email**: security@flyairlinebooking.com
+- **Email**: security@travelofaredeals.com
 - **Phone**: +1-844-480-0252
 - **Documentation**: Check IMPLEMENTATION_SUMMARY.md
 

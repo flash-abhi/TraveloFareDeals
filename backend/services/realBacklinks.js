@@ -9,9 +9,9 @@ const axios = require('axios');
 
 class RealBacklinkService {
   constructor() {
-    this.siteUrl = process.env.SITE_URL || 'https://flyairlinebooking.com';
+    this.siteUrl = process.env.SITE_URL || 'https://travelofaredeals.com';
     this.siteName = process.env.SITE_NAME || "TraveloFare";
-    this.siteEmail = process.env.SITE_EMAIL || "info@flyairlinebooking.com";
+    this.siteEmail = process.env.SITE_EMAIL || "info@travelofaredeals.com";
     this.sitePhone = process.env.SITE_PHONE || "+1-800-555-0199";
     this.siteDescription =
       "Find the best flight deals, cheap airline tickets, hotel bookings, and vacation packages. Save up to 70% on your next trip with TraveloFare.";

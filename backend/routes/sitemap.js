@@ -43,7 +43,7 @@ const airlines = [
 // Generate XML sitemap
 router.get('/sitemap.xml', (req, res) => {
   console.log('📄 Sitemap.xml requested');
-  const baseUrl = process.env.SITE_URL || 'https://flyairlinebooking.com';
+  const baseUrl = process.env.SITE_URL || 'https://travelofaredeals.com';
   const currentDate = new Date().toISOString().split('T')[0];
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -97,7 +97,7 @@ router.get('/sitemap.xml', (req, res) => {
 
 // Generate robots.txt
 router.get('/robots.txt', (req, res) => {
-  const baseUrl = process.env.SITE_URL || 'https://flyairlinebooking.com';
+  const baseUrl = process.env.SITE_URL || 'https://travelofaredeals.com';
   
   let robotsTxt = 'User-agent: *\n';
   robotsTxt += 'Allow: /\n';
@@ -112,7 +112,7 @@ router.get('/robots.txt', (req, res) => {
 
 // HTML sitemap for users
 router.get('/sitemap.html', (req, res) => {
-  const baseUrl = process.env.SITE_URL || 'https://flyairlinebooking.com';
+  const baseUrl = process.env.SITE_URL || 'https://travelofaredeals.com';
   const blogPosts = blogPostsGetter();
 
   let html = `<!DOCTYPE html>
@@ -120,7 +120,7 @@ router.get('/sitemap.html', (req, res) => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sitemap - flyairlinebooking.com</title>
+  <title>Sitemap - travelofaredeals.com</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f7fafc; color: #2d3748; line-height: 1.6; }
@@ -139,7 +139,7 @@ router.get('/sitemap.html', (req, res) => {
 <body>
   <div class="container">
     <h1>🗺️ Site Map</h1>
-    <p class="subtitle">Complete navigation of flyairlinebooking.com</p>
+    <p class="subtitle">Complete navigation of travelofaredeals.com</p>
     
     <div class="section">
       <h2>✈️ Main Pages</h2>
