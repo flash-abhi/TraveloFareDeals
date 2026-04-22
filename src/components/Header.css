@@ -249,6 +249,7 @@
   background: var(--primary-hover);
   border-color: var(--primary-hover);
   transform: translateY(-3px);
+  color: rgba(230, 240, 239, 0.989);
   box-shadow: 0 8px 24px rgba(252, 121, 13, 0.35);
 }
 

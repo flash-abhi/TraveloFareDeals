@@ -211,7 +211,7 @@
 }
 
 .newsletter-input::placeholder {
-  color: #272525;
+  color: #363636 !important;
   font-weight: 400;
 }
 

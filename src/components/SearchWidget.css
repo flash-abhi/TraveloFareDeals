@@ -26,6 +26,7 @@
   box-shadow: var(--shadow-lg);
   overflow: hidden;
   border: 1px solid var(--border-color);
+  border: 3px solid orange;
 }
 
 /* ===== SEARCH WIDGET HEADER ===== */
@@ -401,16 +402,11 @@
   }
 
   .search-widget-body {
-    padding: 16px 20px;
+    /* padding: 16px 20px; */
   }
 
   .search-fields-wrapper {
     gap: 12px;
-  }
-
-  .search-field-group {
-    flex: 1 1 calc(50% - 6px);
-    min-width: 140px;
   }
 
   .search-button {
@@ -457,7 +453,8 @@
 
   .search-fields-wrapper {
     gap: 10px;
-    flex-direction: column;
+
+    /* flex-direction: column; */
   }
 
   .search-field-group {

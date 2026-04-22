@@ -1408,7 +1408,9 @@
 }
 .newsLetter{
   background: rgba(0, 162, 255, 0.511);
-  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 40px;
 }
 .newsletter-inner { 
   display: grid;

@@ -6,10 +6,10 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 
 export const API_URL = isDevelopment 
   ? 'http://localhost:3002' 
-  : '';  // Empty string for production - uses relative URLs through nginx
+  : 'https://api.travelofaredeals.com';  // Empty string for production - uses relative URLs through nginx
 
 export const SOCKET_URL = isDevelopment
   ? 'http://localhost:3002'
-  : window.location.origin;  // Use same origin for production websocket
+  : 'https://api.travelofaredeals.com';  // Use same origin for production websocket
 
 export default API_URL;

@@ -998,6 +998,7 @@
 .promo-input {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -1493,7 +1494,9 @@
     gap: 12px;
     padding: 12px;
   }
-
+  .promo-input button{
+    width: 100%;
+  }
   .airport-info {
     padding: 8px 0;
   }
