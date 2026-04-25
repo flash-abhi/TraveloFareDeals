@@ -51,7 +51,7 @@ function Contact() {
                 </div>
                 <h3>Call Us</h3>
                 <p className="card-description">Speak with our travel experts</p>
-                <a href={`tel:${contactSettings.tfn.replace(/[^0-9+]/g, '')}`} className="contact-link-main">
+                <a href={`tel:${contactSettings.tfn.replace(/[^0-9+]/g, '')}`}  onclick="return gtag_report_call_conversion('tel:+18008899279');" className="contact-link-main">
                   {contactSettings.tfn}
                 </a>
                 <p className="card-availability">{contactSettings.workingHours || 'Available 24/7'}</p>
@@ -63,7 +63,7 @@ function Contact() {
                 </div>
                 <h3>Email Us</h3>
                 <p className="card-description">Send us your questions</p>
-                <a href={`mailto:${contactSettings.email}`} className="contact-link-main">
+                <a href={`mailto:${contactSettings.email}`}  onclick="return gtag_report_call_conversion('tel:+18008899279');" className="contact-link-main">
                   {contactSettings.email}
                 </a>
                 <p className="card-availability">Response within 2-4 hours</p>
@@ -192,7 +192,7 @@ function Contact() {
           <div className="emergency-contact">
             <h3>Need Immediate Assistance?</h3>
             <p>If you're experiencing a travel emergency or need urgent help, please call us immediately:</p>
-            <a href={`tel:${contactSettings.tfn.replace(/[^0-9+]/g, '')}`} className="emergency-button">
+            <a  onclick="return gtag_report_call_conversion('tel:+18008899279');" href={`tel:${contactSettings.tfn.replace(/[^0-9+]/g, '')}`} className="emergency-button">
               <Phone size={24} />
               Call {contactSettings.tfn} Now
             </a>

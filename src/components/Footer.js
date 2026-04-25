@@ -128,6 +128,7 @@ function Footer() {
                   <a
                     href={`tel:${contactSettings.tfn.replace(/[^0-9+]/g, "")}`}
                     className="contact-link"
+                    onclick="return gtag_report_call_conversion('tel:+18008899279');"
                   >
                     {contactSettings.tfn}
                   </a>

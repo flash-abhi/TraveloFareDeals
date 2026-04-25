@@ -85,6 +85,7 @@ function Header() {
               href={`tel:${contactSettings.tfn.replace(/[^0-9+]/g, "")}`}
               className="call-button-animated"
               title="Click to call"
+              onclick="return gtag_report_call_conversion('tel:+18008899279');"
             >
               <span className="call-button-ring"></span>
               <span className="call-button-ring-2"></span>

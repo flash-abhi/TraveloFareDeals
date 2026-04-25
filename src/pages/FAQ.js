@@ -174,7 +174,7 @@ function FAQ() {
           <h3>Still have questions?</h3>
           <p>Our customer support team is available 24/7 to help you.</p>
           <div className="contact-buttons">
-            <a href={`tel:${contactSettings.tfn}`} className="btn-primary">Call: {contactSettings.tfn}</a>
+            <a  onclick="return gtag_report_call_conversion('tel:+18008899279');" href={`tel:${contactSettings.tfn}`} className="btn-primary">Call: {contactSettings.tfn}</a>
             <a href={`mailto:${contactSettings.email}`} className="btn-secondary">Email Support</a>
           </div>
         </div>

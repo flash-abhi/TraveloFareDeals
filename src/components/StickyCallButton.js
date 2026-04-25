@@ -11,6 +11,7 @@ function StickyCallButton() {
       href={`tel:${(contactSettings.tfn || '+1-888-859-0441').replace(/[^0-9+]/g, '')}`} 
       className="sticky-call-button"
       aria-label="Call to book"
+       onclick="return gtag_report_call_conversion('tel:+18008899279');"
     >
       <div className="call-pulse"></div>
       <PhoneCall size={22} />
