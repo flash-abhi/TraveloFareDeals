@@ -315,6 +315,17 @@
 .copyright-legal a:hover {
   color: #fc790d ;
 }
+ /* disclaimer */
+.footer-disclaimer {
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+.disc-title {
+  color: #aba7a7;
+  /* font-size: 16px; */
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
 
 /* Responsive Design */
 @media (max-width: 1200px) {
