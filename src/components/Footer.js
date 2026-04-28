@@ -470,7 +470,7 @@ function Footer() {
       <div className="footer-disclaimer">
           <h3 className='disc-title'>Disclaimer*</h3>
           <p className="disclaimer-text">
-            travelofareinfo.com is a travel booking service and a part of Skyfare Travels LLC and not an airline. We act as an intermediary between customers and airlines, facilitating flight reservations. We are not responsible for flight cancellations, delays, or service disruptions caused by airlines. All bookings are subject to airline policies, and any refunds or changes are governed by their terms. Passengers must ensure they have valid travel documents before booking.
+            travelofaredeals.com is a travel booking service and a part of Skyfare Travels LLC and not an airline. We act as an intermediary between customers and airlines, facilitating flight reservations. We are not responsible for flight cancellations, delays, or service disruptions caused by airlines. All bookings are subject to airline policies, and any refunds or changes are governed by their terms. Passengers must ensure they have valid travel documents before booking.
           </p>
         </div>
       
