@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Plane, Calendar, MapPin, Users, Search, ArrowRightLeft, Star, TrendingDown, Quote } from 'lucide-react';
+import { Plane, Calendar, MapPin, Users, Search, Star, TrendingDown, Quote } from 'lucide-react';
 import AirportAutocomplete from '../components/AirportAutocomplete';
 import './Flights.css';
 
@@ -330,8 +330,8 @@ function Flights() {
                 </div>
 
                 {/* Swap Button */}
-                <button type="button" className="swap-btn" onClick={swapAirports}>
-                  <ArrowRightLeft color="white" size={20} />
+                <button type="button" className="swap-btn" onClick={swapAirports} aria-label="Swap airports">
+                  <span className="swap-icon-fallback" aria-hidden="true">↔</span>
                 </button>
 
                 {/* To */}
