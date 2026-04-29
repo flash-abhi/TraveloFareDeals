@@ -63,6 +63,7 @@
   .sticky-call-button {
     bottom: 20px;
     right: 20px;
+    width: 230px;
     padding: 12px 16px;
   }
 
@@ -81,14 +82,10 @@
 
 @media (max-width: 480px) {
   .sticky-call-button {
-    bottom: 16px;
-    right: 16px;
-    padding: 14px;
-    border-radius: 50%;
-  }
-
-  .call-text {
-    display: none;
+    bottom: 20px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
   }
 
   .call-pulse {
